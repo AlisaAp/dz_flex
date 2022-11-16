@@ -1,0 +1,147 @@
+@import url(reset.css);
+html {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  line-height: 26px;
+}
+.header,
+.section_3,
+.footer {
+  background-color: rgba(2, 5, 9, 1);
+}
+.header_flexbox,
+.content_1,
+.content_2,
+.content_3,
+.content_4,
+.footer_box {
+  width: 1320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.header_flexbox {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  align-items: center;
+  padding: 39px 0px 40px;
+  line-height: 16px;
+}
+
+.header_flexbox > div > a {
+  text-decoration: none;
+  color: rgba(212, 221, 225, 1);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.header_flexbox > div:first-child {
+  flex-grow: 1;
+}
+
+.header_flexbox > .active > a {
+  color: rgba(255, 0, 56, 1);
+}
+.header_flexbox > .logo > a {
+  letter-spacing: 8px;
+  font-weight: 900;
+}
+.section_1 {
+  background-color: rgba(255, 206, 56, 0.05);
+}
+.content_1 {
+  padding: 252px 0 181px;
+}
+.box_1,
+.box_2,
+.box_4 {
+  width: 540px;
+}
+.title {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 38px;
+  line-height: 45px;
+}
+.description {
+  font-size: 16px;
+  color: rgba(114, 114, 114, 1);
+}
+.box_1 > .description {
+  margin-bottom: 40px;
+}
+button {
+  background-color: rgb(255, 206, 56);
+  width: 225px;
+  padding: 24px 0 24px;
+  border: none;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 3px;
+}
+button:active {
+  background-color: rgb(247, 142, 6);
+}
+.section_2,
+.section_4 {
+  background-color: rgba(0, 207, 250, 0.05);
+}
+
+.content_2 {
+  padding: 84px 0 95px;
+}
+.box_2,
+.box_4 {
+  margin: 0 auto;
+}
+.subtitle {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 64px;
+  line-height: 38px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.box_2 > .description,
+.box_4 > .description {
+  text-align: center;
+}
+
+.content_3 {
+  padding: 83px 0 82px;
+}
+.box_3 {
+  display: flex;
+  justify-content: space-between;
+}
+.projects {
+  text-align: center;
+}
+.projects > a {
+  text-decoration: none;
+}
+.text {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+}
+.font_size {
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.content_4 {
+  padding: 84px 0 69px;
+  text-align: center;
+}
+.img_box_4 {
+  padding: 85px 0 69px;
+}
+.footer_box {
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  line-height: 25px;
+  font-size: 18px;
+  padding: 37.5px 0;
+}
