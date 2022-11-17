@@ -10,48 +10,46 @@ body {
 .footer {
   background-color: rgba(2, 5, 9, 1);
 }
-.header_flexbox,
-.content_1,
-.content_2,
-.content_3,
-.content_4,
-.footer_box {
+
+.container {
   width: 1320px;
   margin: 0 auto;
-  box-sizing: border-box;
 }
-.header_flexbox {
-  display: flex;
-  justify-content: flex-start;
-  gap: 30px;
-  align-items: center;
+.header {
   padding: 39px 0px 40px;
+}
+.header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   line-height: 16px;
 }
-
-.header_flexbox > div > a {
+.header_list {
+  display: flex;
+  gap: 30px;
+}
+li > a {
   text-decoration: none;
   color: rgba(212, 221, 225, 1);
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
-.header_flexbox > div:first-child {
-  flex-grow: 1;
-}
 
-.header_flexbox > .active > a {
+.active {
   color: rgba(255, 0, 56, 1);
 }
-.header_flexbox > .logo > a {
+.logo {
   letter-spacing: 8px;
   font-weight: 900;
+  text-decoration: none;
+  color: rgba(212, 221, 225, 1);
+  text-transform: uppercase;
 }
 .section_1 {
   background-color: rgba(255, 206, 56, 0.05);
+  padding: 157px 0 181px;
 }
-.content_1 {
-  padding: 252px 0 181px;
-}
+
 .box_1,
 .box_2,
 .box_4 {
@@ -72,8 +70,7 @@ body {
 }
 button {
   background-color: rgb(255, 206, 56);
-  width: 225px;
-  padding: 24px 0 24px;
+  padding: 24px 41px 24px 41px;
   border: none;
   font-size: 16px;
   letter-spacing: 0.1em;
@@ -88,10 +85,10 @@ button:active {
 .section_4 {
   background-color: rgba(0, 207, 250, 0.05);
 }
-
-.content_2 {
+.section_2 {
   padding: 84px 0 95px;
 }
+
 .box_2,
 .box_4 {
   margin: 0 auto;
@@ -101,7 +98,6 @@ button:active {
   font-weight: 500;
   margin-bottom: 64px;
   line-height: 38px;
-  box-sizing: border-box;
   text-align: center;
 }
 .box_2 > .description,
@@ -109,14 +105,15 @@ button:active {
   text-align: center;
 }
 
-.content_3 {
+.section_3 {
   padding: 83px 0 82px;
 }
-.box_3 {
+
+.section_3_list {
   display: flex;
   justify-content: space-between;
 }
-.projects {
+.section_3_list > li {
   text-align: center;
 }
 .projects > a {
@@ -125,20 +122,22 @@ button:active {
 .text {
   color: rgba(255, 255, 255, 1);
   font-size: 16px;
+  padding-top: 10px;
 }
 .font_size {
   font-size: 24px;
   vertical-align: middle;
 }
-
-.content_4 {
+.section_4 {
   padding: 84px 0 69px;
   text-align: center;
 }
+
 .img_box_4 {
   padding: 85px 0 69px;
 }
-.footer_box {
+
+.footer {
   color: rgba(255, 255, 255, 1);
   text-align: center;
   line-height: 25px;
